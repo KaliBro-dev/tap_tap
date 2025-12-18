@@ -9,20 +9,30 @@
 <body>
   <div class="wrap">
     <header class="top">
-      <h1>Tap The Face 😵‍💫</h1>
+      <div class="title">
+        <h1>Tap The Face 😵‍💫</h1>
+        <p>Tap fast before time ends!</p>
+      </div>
+
       <div class="hud">
-        <div>Score: <b id="score">0</b></div>
-        <div>Time: <b id="time">30</b>s</div>
+        <div class="card"><span>Score</span><b id="score">0</b></div>
+        <div class="card"><span>Time</span><b id="time">30</b>s</div>
         <button id="startBtn">Start</button>
       </div>
     </header>
 
     <main class="arena">
-      <button class="target" id="target">
-        <img id="targetImg" src="img1.jpg" alt="target" />
+      <button class="target" id="target" aria-label="target">
+        <img id="targetImg" src="./img1.jpg" alt="target" />
+        <div class="bubble" id="bubble">?!</div>
       </button>
-      <div id="msg"></div>
+
+      <div class="msg" id="msg">Press Start ✅</div>
     </main>
+
+    <footer class="footer">
+      <small>Hosted on GitHub Pages</small>
+    </footer>
   </div>
 
   <script src="game.js"></script>
